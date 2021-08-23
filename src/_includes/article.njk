@@ -1,0 +1,22 @@
+---
+layout: "base.njk"
+---
+<center>
+<div class="containtitle">
+  <div class="articletitle">
+    <h1>{{ title }}</h1>
+    <h3>Posted On: {{date | postDate}}</h3>
+  </div>
+  <h3 class="mt-2 tag"><span>Author: {{author}}</span> <span class="spanr">Tags: {{tags}}</span></h3> 
+</div>
+</center>
+
+<img src="{{ image }}" alt="{{ imageAlt }}" width="100%" />
+
+<br/>
+
+<div class="blogcontain">
+<div class="blogcontent">
+    {{ content | safe }}
+</div>
+</div>

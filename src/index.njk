@@ -1,0 +1,59 @@
+---
+title: Dr. Muhammad Khan
+layout: "base.njk"
+---
+
+<!-- Hero Section -->
+<section class="flex bg-gray-100 mt-2 hero">
+  <div class="left">
+    <h1 class="text-3xl">Dr. Muhammad Khan</h1>
+    <p class="descrip">CEO of Psycore Medical</p>
+    <button
+      class="
+        bg-blue-500
+        hover:bg-blue-700
+        text-white
+        font-bold
+        py-2
+        px-4
+        rounded
+      "
+    >
+      Learn More
+    </button>
+    <button
+      class="
+        bg-blue-500
+        hover:bg-blue-700
+        text-white
+        font-bold
+        py-2
+        px-4
+        rounded
+      "
+    >
+      Read My Blogs
+    </button>
+  </div>
+  <div class="right">
+    <img src="assets/khan.png" width="100%" />
+  </div>
+</section>
+
+<section class="featuredarticle">
+  <h1 class="text-4xl m-5">Featured Articles</h1>
+  <div
+    class="
+      p-10
+      grid grid-cols-1
+      sm:grid-cols-1
+      md:grid-cols-3
+      lg:grid-cols-3
+      xl:grid-cols-3
+      gap-5
+    "
+  >
+    {%- for post in collections.featured| reverse -%} {% include
+    "article-snippet.njk" %} {%- endfor %}
+  </div>
+</section>
