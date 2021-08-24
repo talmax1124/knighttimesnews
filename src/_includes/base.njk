@@ -11,6 +11,38 @@
       rel="stylesheet"
     />
 
+    <meta
+      property="og:title"
+      content="{% if social-title %}{{ social - title }}{% else %}{{
+        title
+      }} | {{ title }}{% endif %}"
+    />
+    <meta
+      property="og:description"
+      content="{% if social-description %}{{
+        social - description
+      }}{% elif  description %}{{ description }}{% else %}{{
+        description
+      }}{% endif %}"
+    />
+    <meta
+      property="og:url"
+      content="{{ page.url | url | absoluteUrl(metadata.url) }}"
+    />
+    <meta
+      property="og:image"
+      content="{% if social-image %}{{
+        social - image
+      }}{% else %}{{ site.url | url | absoluteUrl(metadata.url) }}img/brand-icon.png{% endif %}"
+    />
+    <meta
+      name="twitter:image"
+      content="{% if social-image %}{{
+        social - image
+      }}{% else %}{{ site.url | url | absoluteUrl(metadata.url) }}img/brand-icon.png{% endif %}"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <!-- Netlify CMS -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>

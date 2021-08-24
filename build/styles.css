@@ -188115,3 +188115,37 @@ body {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+
+.left {
+  width: 49%;
+}
+
+.right {
+  width: 49%;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .right{
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+    margin: 1em .5em;
+    text-align: center;
+  }
+}
+
+.hero {
+  align-items: center;
+}
+
+.left {
+  padding: 1em;
+}

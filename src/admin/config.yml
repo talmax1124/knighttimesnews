@@ -19,3 +19,12 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body/Content", name: "body", widget: "markdown" }
+
+    - name: "page"
+    label: "Page"
+    folder: "src/pages"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
