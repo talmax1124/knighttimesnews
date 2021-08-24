@@ -16,11 +16,22 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - {
+          label: "Category",
+          name: "category",
+          widget: select,
+          options: ["News", "A&E", "Features", "Insights"],
+        }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body/Content", name: "body", widget: "markdown" }
-      - { label: "layout", name: "layout", widget: "article.njk" }
-    
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "text",
+          default: "article.njk",
+        }
+
   - name: "page"
     label: "Page"
     folder: "src/pages"
@@ -29,3 +40,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "text",
+          default: "pages.njk",
+        }

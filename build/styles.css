@@ -188140,6 +188140,10 @@ body {
     margin: 1em .5em;
     text-align: center;
   }
+
+  .podcastembed{
+    width: 90%;
+  }
 }
 
 .hero {
@@ -188161,7 +188165,7 @@ body {
 }
 
 .broadcasts {
-  background-color: #161616;
+  background-color: #005792;
   color: white;
   padding: 1.3em
 }
@@ -188170,9 +188174,27 @@ body {
   font-size: 2.5em;
 }
 
+.podcasts {
+  background-color: #131313;
+  color: white;
+  padding: 1.3em
+}
+
+.navv {
+  z-index: 9999999;
+}
+
+.podcasts h1 {
+  font-size: 2.5em;
+}
+
 @media (max-width: 1000px) {
   .youtubeplayer {
     width: 90%;
+  }
+
+  .calender{
+    height: 300px;
   }
 }
 
@@ -188187,3 +188209,37 @@ body {
   transition: .55s ease;
   color: red;
 }
+
+.flexname2 {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.youtubeicon:hover {
+  transition: .55s ease;
+  color: #FF0000;
+}
+.spotifyicon:hover {
+  transition: .55s ease;
+  color: #1DB954;
+}
+
+.amazonicon:hover {
+  transition: .55s ease;
+  color: #FF9900;
+}
+
+.podcastplayer {
+  display: block;
+  margin: 1em auto;
+}
+
+.events {
+  padding: 1.3em
+}
+
+.covid {
+  padding: 1.3em
+}
+
