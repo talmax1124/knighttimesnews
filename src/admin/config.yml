@@ -19,8 +19,8 @@ collections:
       - {
           label: "Category",
           name: "category",
-          widget: select,
-          options: ["News", "A&E", "Features", "Insights"],
+          widget: "list",
+          default: ["news", "a&e", "features", "insights"],
         }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }

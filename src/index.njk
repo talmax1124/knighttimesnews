@@ -509,7 +509,7 @@ layout: "base.njk"
       gap-5
     "
   >
-    {%- for post in collections.featured| reverse -%} {% include
+    {%- for post in collections.featured | reverse -%} {% include
     "article-snippet.njk" %} {%- endfor %}
   </div>
 </section>
@@ -561,15 +561,15 @@ layout: "base.njk"
         target="blank"
         ><i class="fab fa-youtube youtubeicon text-3xl mr-2"></i
       ></a>
-      <a href="#"><i class="fab fa-spotify spotifyicon text-3xl mr-2"></i></a>
-      <a href="#"><i class="fab fa-amazon amazonicon text-3xl"></i></a>
+      <a href="https://open.spotify.com/show/0OOVhjCwJ0JZXIajXBMGgt"><i class="fab fa-spotify spotifyicon text-3xl mr-2"></i></a>
+      <a href="https://skills-store.amazon.com/deeplink/dp/B08RXPPM8W?deviceType=app&share&refSuffix=ss_copy"><i class="fab fa-amazon amazonicon text-3xl"></i></a>
     </span>
   </div>
   <div class="podcastplayer">
     <center>
       <iframe
         src="https://anchor.fm/knight-times-news/embed/episodes/Ep-3--Mrs--Greco--Know-The-Neo-eu1vfg"
-        height="102px"
+        height="150px"
         width="50%"
         frameborder="0"
         scrolling="no"
@@ -580,7 +580,7 @@ layout: "base.njk"
 </section>
 
 <section class="events">
-  <h1 style="font-size: 2.5em;" class="mb-2">Events</h1>
+  <h1 style="font-size: 2.5em" class="mb-2">Events</h1>
   <div class="calenderbox">
     <iframe
       src="https://calendar.google.com/calendar/embed?src=skkj0al573e7vndddl37bjtcno%40group.calendar.google.com&ctz=America%2FNew_York"
@@ -595,6 +595,10 @@ layout: "base.njk"
 </section>
 
 <section class="covid">
-  <h1 style="font-size: 2.5em;" class="mb-2">Covid-19</h1>
-  <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+  <h1 style="font-size: 2.5em" class="mb-2">Covid-19</h1>
+  <iframe
+    src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"
+    width="100%"
+    height="600px"
+  ></iframe>
 </section>

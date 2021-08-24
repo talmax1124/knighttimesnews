@@ -188188,6 +188188,7 @@ body {
   font-size: 2.5em;
 }
 
+
 @media (max-width: 1000px) {
   .youtubeplayer {
     width: 90%;
@@ -188241,5 +188242,15 @@ body {
 
 .covid {
   padding: 1.3em
+}
+
+.containerr {
+  margin: 1em;
+  padding: .5em;
+}
+
+.contentt h2 {
+  font-size: 2em;
+  margin: .5em 0;
 }
 
