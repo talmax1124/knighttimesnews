@@ -19,8 +19,8 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body/Content", name: "body", widget: "markdown" }
-
-    - name: "page"
+    
+  - name: "page"
     label: "Page"
     folder: "src/pages"
     slug: "{{slug}}"
