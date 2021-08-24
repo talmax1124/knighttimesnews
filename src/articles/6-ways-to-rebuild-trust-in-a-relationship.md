@@ -84,7 +84,7 @@ relationship-building? [It's time for some Green Lumber](http://greenlumber.co
 
 
 
-## 5. DEMONSTRATE TRUSTWORTHINESS  
+## 5. DEMONSTRATE TRUSTWORTHINESS
 
 Although some men may be quick to trust, once that trust has been broken it
 usually takes time to rebuild it. However, if both individuals make the decision
@@ -113,7 +113,7 @@ showing vulnerability are also key ways to build or rebuild trust.
 
 
 
-## 6. FOLLOW THE BODY’S NATURAL INSTINCTS 
+## 6. FOLLOW THE BODY’S NATURAL INSTINCTS
 
 The body produces natural chemicals that help control certain human emotions
 that foster trust, trustworthiness, social connections, and intimacy. This means
