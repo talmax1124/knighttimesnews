@@ -9,6 +9,7 @@ tags:
   - post
 image: /assets/blog/green_lumber_rebuild_trust_1600-900.jpg
 imageAlt: Image
+layout: "article.njk"
 ---
 Strong relationships are built on trust, but it can easily be broken if people do not make an active effort to maintain that trust. Events or Incidents that can destroy trust include:
 

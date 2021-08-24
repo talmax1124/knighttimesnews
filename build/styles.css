@@ -188149,3 +188149,41 @@ body {
 .left {
   padding: 1em;
 }
+
+.right {
+  padding: 1.5em;
+}
+
+.youtubeplayer {
+  display: block;
+  width: 70%;
+  margin: 1em auto;
+}
+
+.broadcasts {
+  background-color: #161616;
+  color: white;
+  padding: 1.3em
+}
+
+.broadcasts h1 {
+  font-size: 2.5em;
+}
+
+@media (max-width: 1000px) {
+  .youtubeplayer {
+    width: 90%;
+  }
+}
+
+.flexname {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.flexname i:hover {
+  transition: .55s ease;
+  color: red;
+}
