@@ -213,5 +213,5 @@ $('#' + labelID).toggleClass('active');
 		 left: 0;
 	}
 }
- 
+
 </style>
