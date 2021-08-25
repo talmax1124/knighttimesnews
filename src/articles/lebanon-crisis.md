@@ -2,14 +2,14 @@
 title: Lebanon Crisis
 description: More on the lebanon crisis
 author: Zeyad A, Abdurrahman
-date: 2020-08-25T16:58:00.000Z
+date: 2020-09-30T16:58:00.000Z
 tags:
   - post
   - insights
-category: []
 image: /assets/blog/lebanon.jpg
 imageAlt: Lebanon Crisis
 layout: article.njk
+category: []
 ---
 # What happened?
 
