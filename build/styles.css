@@ -188262,4 +188262,15 @@ body {
   color: blue;
 }
 
+.youtubevideo {
+  width: 80%;
+  height: 600px;
+  margin-bottom: 1em;
+}
 
+@media (max-width: 1000px) {
+  .youtubevideo {
+    height: 200px;
+    width: 90%;
+  }
+}

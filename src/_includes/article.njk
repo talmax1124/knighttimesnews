@@ -7,7 +7,24 @@ layout: "base.njk"
     <h1>{{ title }}</h1>
     <h3>Posted On: {{date | postDate}}</h3>
   </div>
-  <h3 class="mt-2 tag"><span>Author: {{author}}</span> <span class="spanr">Tags: {{tags}} </span> <span class="spanr">Category: {{ category }}</span></h3> 
+  <h3 class="mt-2 tag"><span>Author: {{author}}</span> <span class="spanr"> Tags: {% for tags in tags %}
+    <span
+      class="
+        inline-block
+        bg-gray-200
+        rounded-full
+        px-3
+        py-1
+        text-sm
+        font-semibold
+        text-gray-700
+        mr-2
+        ml-1
+        mb-2
+      "
+      >{{ tags }}</span
+    >
+    {% endfor %} </span> 
 </div>
 </center>
 

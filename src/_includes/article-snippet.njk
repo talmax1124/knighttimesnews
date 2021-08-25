@@ -17,7 +17,7 @@
       </p>
     </div>
     <div class="px-6 pt-4 pb-2">
-      {% for tag in tags %}
+      {% for tags in post.data.tags %}
       <span
         class="
           inline-block
@@ -31,9 +31,11 @@
           mr-2
           mb-2
         "
-        >{{ tag }}</span
+        >{{ tags }}</span
       >
       {% endfor %}
+
+
     </div>
   </div>
 </a>
