@@ -26,12 +26,7 @@ Use a better box model (opinionated).
   z-index: -4 ;
 }
 
-.articletitle{
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
+
 
 .articletitle h1 {
   font-size: 3em
@@ -188273,4 +188268,44 @@ body {
     height: 200px;
     width: 90%;
   }
+  
+  .searchbigg {
+    width: fit-content;
+  }
+
+  .searchiconname {
+    margin-left: .5em;
+  }
 }
+
+@media (min-width: 1001px) {
+  .searchiconname {
+    display: none;
+  }
+}
+
+ .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+
+.article-title-divider {
+  width: 50%;
+  padding: .3em;
+  background: #0E0529;
+  border-radius: 1em;
+  margin: .5em 0;
+}
+
+@media (max-width: 1000px) {
+  .article-title-divider {
+    width: 100%;
+    padding: .2em;
+    background: #0E0529;
+    border-radius: 1em;
+  }
+}
+

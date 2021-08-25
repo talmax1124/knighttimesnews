@@ -5,7 +5,7 @@ layout: "base.njk"
 <div class="containtitle">
   <div class="articletitle">
     <h1>{{ title }}</h1>
-    <h3>Posted On: {{date | postDate}}</h3>
+    <div class="article-title-divider"></div>
   </div>
   <h3 class="mt-2 tag"><span>Author: {{author}}</span> <span class="spanr"> Tags: {% for tags in tags %}
     <span
@@ -25,6 +25,7 @@ layout: "base.njk"
       >{{ tags }}</span
     >
     {% endfor %} </span> 
+    <span>Posted On: {{date | postDate}}</span>
 </div>
 </center>
 
