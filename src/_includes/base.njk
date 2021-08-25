@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"
+    ></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: "670DAR37UF",
+        apiKey: "471f52ab282805b5bcd246f23e68ee2e",
+        siteId: "4e791764-5e51-47cb-bd10-a531ccf7733a",
+        branch: "main",
+        selector: "div#search",
+      });
+    </script>
+
     <!-- From UNPKG -->
     <link
       rel="stylesheet"
@@ -223,7 +241,7 @@
       defer
     ></script>
 
-    <link rel="shortcut icon" href="/src/assets/ktlogo.png"/>
+    <link rel="shortcut icon" href="/src/assets/ktlogo.png" />
     <title>{{ title }}</title>
   </head>
   <body>
