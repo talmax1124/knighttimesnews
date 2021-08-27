@@ -81,6 +81,10 @@
     >
       {{ post.data.title }}
     </h1>
+    <div class="flex mt-2 mb-2" style="justify-content: space-between; align-content: center; align-items: center;">
+      <div class="font-bold mb-2">Author: {{ post.data.author }}</div>
+      <div class="font-bold mb-2">{{ post.date | postDate }}</div>
+    </div>
     <!--Description-->
     <div class="max-w-full">
       <p class="text-base font-medium tracking-wide text-gray-600 mt-1">
