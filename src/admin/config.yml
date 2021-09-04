@@ -40,3 +40,14 @@ collections:
           widget: "text",
           default: "pages.njk",
         }
+
+
+- name: "faq"
+    label: "faq"
+    folder: "src/faq"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Question", name: "title", widget: "string" }
+      - { label: "Response", name: "response", widget: "markdown" }
+  
