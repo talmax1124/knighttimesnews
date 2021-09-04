@@ -29,7 +29,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-<<<<<<< HEAD
       - {
           label: "layout",
           name: "layout",
@@ -47,6 +46,3 @@ collections:
       - { label: "Question", name: "title", widget: "string" }
       - { label: "Response", name: "response", widget: "markdown" }
   
-=======
-      - {label: "layout", name: "layout", widget: "hidden", default: "pages.njk"}
->>>>>>> 8684ad6c444b086248802edf92fd50e083f38083
