@@ -8,61 +8,136 @@ layout: "base.njk"
 <!-- Hero Section -->
 <section class="flex bg-gray-100 mt-2 hero">
   <div class="left">
-    <h1 class="text-6xl">Dr. Muhammad Khan</h1>
+    <h1 class="text-6xl">Knight Times News</h1>
     <p class="descrip">
-      CEO of Psycore Medical
+      Creating News & Content For You To Enjoy! Proudly made by NeoCity Academy
+      students!
     </p>
-    <a href="#">
-    <button
-      class="
-        bg-blue-500
-        hover:bg-blue-700
-        text-white
-        font-bold
-        py-2
-        px-4
-        rounded
-      "
+    <a
+      href="https://forms.office.com/Pages/ResponsePage.aspx?id=P_MwfbuLhUaAS5r80tFljVK4VnFD1J1GrI6trjZRfY9UNjRCUjRJTEdIQkNYQ0lSOFBLR1dMSFZOSC4u"
     >
-      Join Us!
-    </button>
-  </a>
-  <a href="/articles">
-    <button
-      class="
-        bg-blue-500
-        hover:bg-blue-700
-        text-white
-        font-bold
-        py-2
-        px-4
-        rounded
-      "
-    >
-      Read My Articles
-    </button>
-  </a>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Join Us!
+      </button>
+    </a>
+    <a href="/articles">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Read Our Articles
+      </button>
+    </a>
   </div>
   <div class="right">
-    <img src="assets/khan.png" alt="">
+    <iframe
+      src="https://my.spline.design/newsicons-6152da767cfc0e18a4cdd7fae23ced2e/"
+      frameborder="0"
+      width="100%"
+      height="400em"
+    ></iframe>
   </div>
 </section>
 
 <section class="featuredarticle">
   <h1 class="text-4xl m-5">Featured Articles</h1>
-  <div
-    class="
-      p-10
-      grid grid-cols-1
-      sm:grid-cols-1
-      md:grid-cols-3
-      lg:grid-cols-3
-      xl:grid-cols-3
-      gap-5
-    "
-  >
+  <div class="flex justify-evenly flex-wrap">
     {%- for post in collections.featured | reverse -%} {% include
     "article-snippet.njk" %} {%- endfor %}
   </div>
 </section>
 
+<section class="broadcasts">
+  <div class="flexname">
+    <h1>Broadcasts</h1>
+    <a
+      href="https://www.youtube.com/channel/UCofs7madAM8iVlidQEzHmBg"
+      target="blank"
+      ><i class="fab fa-youtube text-3xl"></i
+    ></a>
+  </div>
+  <div class="youtubeplayer">
+    <style>
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <div class="embed-container">
+      <iframe
+        src="https://www.youtube.com/embed//_EqioG3DEFI"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="podcasts">
+  <div class="flexname2">
+    <h1>Podcasts</h1>
+    <span>
+      <a
+        href="https://www.youtube.com/watch?v=nnZflv3Ez5c&list=PLWoJ8lk-542hD-c1i9fK3Lbje9Ky-P6ww"
+        target="blank"
+        ><i class="fab fa-youtube youtubeicon text-3xl mr-2"></i
+      ></a>
+      <a href="https://open.spotify.com/show/0OOVhjCwJ0JZXIajXBMGgt"
+        ><i class="fab fa-spotify spotifyicon text-3xl mr-2"></i
+      ></a>
+      <a
+        href="https://skills-store.amazon.com/deeplink/dp/B08RXPPM8W?deviceType=app&share&refSuffix=ss_copy"
+        ><i class="fab fa-amazon amazonicon text-3xl"></i
+      ></a>
+    </span>
+  </div>
+  <div class="podcastplayer">
+    <center>
+      <iframe
+        src="https://anchor.fm/knight-times-news/embed/episodes/Ep-3--Mrs--Greco--Know-The-Neo-eu1vfg"
+        height="150px"
+        width="50%"
+        frameborder="0"
+        scrolling="no"
+        class="podcastembed"
+      ></iframe>
+    </center>
+  </div>
+</section>
+
+<section class="events">
+  <h1 style="font-size: 2.5em" class="mb-2">Events</h1>
+  <div class="calenderbox">
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=skkj0al573e7vndddl37bjtcno%40group.calendar.google.com&ctz=America%2FNew_York"
+      style="border: 0"
+      width="100%"
+      height="600"
+      frameborder="0"
+      scrolling="no"
+      class="calender"
+    ></iframe>
+  </div>
+</section>
+
+<section class="covid">
+  <h1 style="font-size: 2.5em" class="mb-2">Covid-19</h1>
+  <iframe
+    src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"
+    width="100%"
+    height="600px"
+  ></iframe>
+</section>
