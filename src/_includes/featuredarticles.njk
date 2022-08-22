@@ -1,0 +1,7 @@
+<section class="featuredarticle">
+  <h1 class="text-4xl m-5 font-display font-medium">My Most Read Articles</h1>
+  <div class="flex justify-evenly flex-wrap">
+    {%- for post in collections.featured | reverse -%} {% include
+    "article-snippet.njk" %} {%- endfor %}
+  </div>
+</section>

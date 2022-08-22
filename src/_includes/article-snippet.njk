@@ -50,38 +50,25 @@
     <div class="pr-6 pt-4 pb-2">
       {% for tags in post.data.tags %}
       <span
-        class="
-          inline-block
-          bg-gray-200
-          rounded-full
-          px-3
-          py-1
-          text-sm
-          font-semibold
-          text-gray-700
-          mr-2
-          mb-2
-        "
+        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
         >{{ tags }}</span
       >
       {% endfor %}
     </div>
     <!--Title-->
     <h1
-      class="
-        font-semibold
-        text-gray-900
-        leading-none
-        text-xl
-        mt-1
-        capitalize
-        truncate
-        hover:underline
-      "
+      class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate hover:underline"
     >
       {{ post.data.title }}
     </h1>
-    <div class="flex mt-2 mb-2" style="justify-content: space-between; align-content: center; align-items: center;">
+    <div
+      class="flex mt-2 mb-2"
+      style="
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+      "
+    >
       <div class="font-bold mb-2">Author: {{ post.data.author }}</div>
       <div class="font-bold mb-2">{{ post.date | postDate }}</div>
     </div>
